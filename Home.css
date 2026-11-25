@@ -1,0 +1,269 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+
+}
+
+.homepage {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 0 0 0;
+  z-index: 1;
+  overflow-x: hidden;
+ 
+  /* ✨ Beautiful Background Gradient */
+  background: linear-gradient(135deg, #a9ccf6, #e3ccff);
+}
+
+
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(30px) scale(1.05);
+  }
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Section Titles */
+.features, .how-it-works, .testimonials {
+  position: relative;
+  z-index: 2;
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.features h2,
+.how-it-works h2,
+.testimonials h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Feature Cards */
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  
+  border-radius: 15px;
+  padding: 25px;
+  width: 240px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card svg {
+  font-size: 2rem;
+  color: #6a11cb;
+}
+
+/* How it works steps */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  
+}
+
+.step {
+  background: #f3f3f5;
+  border-radius: 15px;
+  padding: 25px;
+  width: 240px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.step svg {
+  font-size: 2rem;
+  color: #2575fc;
+}
+
+.step h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Testimonials */
+.testimonials {
+  background: linear-gradient(135deg,#cca9f6, #a4cbfb);
+  padding: 80px 20px;
+  color: #1a1a1a;
+  text-align: center;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.testimonial-box {
+  background-color: #f8f9ff;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 650px;
+  color: #333;
+  font-size: 1.1rem;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.1); /* blueish soft shadow */
+}
+
+.quote-icon {
+  font-size: 3rem;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  color: #8e7cc3; /* soft purple */
+}
+
+.testimonial-author {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+}
+.footer {
+  background-color: #111123;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: 100vw;         /* Make it span full viewport width */
+  box-sizing: border-box;
+  position: relative;
+  left:0;
+  right:0;
+  height: 350px;
+}
+
+.footer-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: rgb(221, 214, 246);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #6b5de0;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #666;
+}

@@ -1,0 +1,41 @@
+.navbar {
+  height: 70px;              
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:linear-gradient(135deg,#9d94f6,#8477fc,#6352fa);
+  color: white;
+  padding: 1rem 2rem;
+}
+.logo-img {
+  max-height: 50rem;
+  height: 125px;
+  max-width: 350px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a,
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn:hover,
+.navbar-links a:hover {
+  text-decoration: underline;
+}

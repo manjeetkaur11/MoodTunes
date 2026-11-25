@@ -1,0 +1,227 @@
+/* General Layout */
+.dashboard {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  min-height: 100vh;
+  padding: 30px;
+  color: #333;
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+}
+
+/* Optional: Align headings */
+.dashboard h2,
+.dashboard h3 {
+  text-align: center;
+}
+
+
+/* Header Section */
+.dashboard-header h1 {
+  font-size: 36px;
+  color: #673ab7;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Mood Buttons */
+.mood-buttons {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mood-buttons button {
+  background: #a56dff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(165, 109, 255, 0.4);
+  cursor: pointer;
+}
+
+.mood-buttons button:hover {
+  transform: translateY(-2px);
+  background: #8c4dff;
+}
+
+/* Suggestions */
+.suggestions {
+  margin-top: 30px;
+}
+
+.suggestions h3 {
+  font-size: 22px;
+  color: #5e35b1;
+}
+
+/* Tool Cards */
+.dashboard-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tool {
+  flex: 1 1 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.tool:hover {
+  transform: translateY(-5px);
+}
+
+.tool h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3f51b5;
+}
+
+/* Mood History */
+.mood-history {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mood-history h3 {
+  color: #5e35b1;
+  margin-bottom: 10px;
+}
+
+.mood-history button {
+  float: right;
+  margin-bottom: 10px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mood-history button:hover {
+  background-color: #c2185b;
+}
+
+/* Quote Box */
+.quote-box {
+  margin-top: 40px;
+  background: #ffffff;
+  border-left: 4px solid #9c27b0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.quote-box blockquote {
+  font-size: 20px;
+  font-style: italic;
+  background: linear-gradient(to right, #8e44ec, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.logout-btn {
+  background-color: #ff5252;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* To-Do List */
+.todo-list {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.todo-list h3 {
+  color: #3949ab;
+}
+
+/* Ambient Sounds Buttons */
+.tool button {
+  margin: 8px 4px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7986cb;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tool button:hover {
+  background-color: #5c6bc0;
+}
+
+.tool button.active {
+  background-color: #ffd54f;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Hover Effects */
+button:hover,
+.tool:hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.03);
+}
+.mood-buttons button,
+.ambient-sounds button {
+  padding: 10px 20px;
+  background-color: #a366ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.mood-buttons button:hover,
+.ambient-sounds button:hover {
+  transform: scale(1.05);
+}
+
